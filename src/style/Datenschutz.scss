@@ -1,0 +1,17 @@
+.list {
+  li {
+    margin-left: 1.1em;
+    margin-bottom: 1em;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: -1.1em;
+      top: 0.1em;
+      background-image: url(../images/bullet.svg);
+    }
+  }
+}

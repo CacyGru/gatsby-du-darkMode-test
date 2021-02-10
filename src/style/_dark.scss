@@ -1,0 +1,26 @@
+html .dark {
+  background: grey;
+}
+
+.dark {
+  .container {
+    background: grey !important;
+    color: white;
+  }
+
+  nav a::after {
+    background: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  .subHeader {
+    color: rgb(212, 210, 210) !important;
+  }
+}
+
+html .light {
+  background: white;
+}
