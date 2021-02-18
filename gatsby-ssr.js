@@ -1,6 +1,7 @@
 const React = require("react")
-const GlobalContextProvider = require("./src/context/GlobalContextProvider")
-  .default
+const {
+  default: GlobalContextProvider,
+} = require("./src/context/GlobalContextProvider")
 
 exports.wrapRootElement = ({ element }) => {
   return <GlobalContextProvider>{element}</GlobalContextProvider>

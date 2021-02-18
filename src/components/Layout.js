@@ -7,12 +7,12 @@ import { GlobalStateContext } from "../context/GlobalContextProvider"
 
 const Layout = props => {
   const state = useContext(GlobalStateContext)
-
   return (
     <div className={state.theme}>
       <div className="container">
         <div className="content">
           <Header />
+
           {props.children}
         </div>
         <TotopButton />

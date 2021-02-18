@@ -24,17 +24,17 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Unterricht/" activeStyle={activeStyles}>
+            <Link to="/Unterricht" activeStyle={activeStyles}>
               Unterricht
             </Link>
           </li>
           <li>
-            <Link to="/Teamtraining/" activeStyle={activeStyles}>
+            <Link to="/Teamtraining" activeStyle={activeStyles}>
               Teamtraining
             </Link>
           </li>
           <li>
-            <Link to="/Kontakt/" activeStyle={activeStyles}>
+            <Link to="/Kontakt" activeStyle={activeStyles}>
               Kontakt
             </Link>
           </li>
@@ -42,6 +42,7 @@ const Header = () => {
       </nav>
 
       <button
+        type="button"
         onClick={() => {
           dispatch({ type: "TOGGLE_THEME" })
         }}
