@@ -13,7 +13,7 @@ const Home = () => {
           <span className="underline">Level</span>
         </blockquote>
       </h1>
-      <CTAButton text="kostenlose Teststunde vereinbaren" to="/Kontakt" />
+      <CTAButton text="kostenlose Teststunde vereinbaren" to="/kontakt" />
     </Layout>
   )
 }

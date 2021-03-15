@@ -1,5 +1,6 @@
-@import "./colors";
-@import "./dark";
+@use "./colors" as *;
+@use "./dark";
+@use "./light";
 
 * {
   margin: 0;
@@ -8,21 +9,29 @@
   font-family: sans-serif;
 }
 
-.container {
-  max-width: 800px;
+body {
+  color: $text;
+}
+
+.bg {
   min-height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 1000px;
+  height: auto;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .content {
   flex-grow: 1;
-}
-
-h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 li {

@@ -3,16 +3,17 @@ import { Link } from "gatsby"
 
 import headerStyles from "./Header.module.scss"
 import { GlobalDispatchContext } from "../context/GlobalContextProvider"
+import ButtonLight from "./Buttonlight"
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
 
   const activeStyles = {
-    color: "#f30909",
+    color: "#db0202",
   }
 
   return (
-    <header style={headerStyles.header}>
+    <header className="card" style={headerStyles.header}>
       <Link to="/">
         <h1>Drum UP</h1>
       </Link>
@@ -24,31 +25,31 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Unterricht" activeStyle={activeStyles}>
+            <Link to="/unterricht" activeStyle={activeStyles}>
               Unterricht
             </Link>
           </li>
           <li>
-            <Link to="/Teamtraining" activeStyle={activeStyles}>
+            <Link to="/teamtraining" activeStyle={activeStyles}>
               Teamtraining
             </Link>
           </li>
           <li>
-            <Link to="/Kontakt" activeStyle={activeStyles}>
+            <Link to="/kontakt" activeStyle={activeStyles}>
               Kontakt
             </Link>
           </li>
         </ul>
       </nav>
 
-      <button
+      <ButtonLight
         type="button"
         onClick={() => {
           dispatch({ type: "TOGGLE_THEME" })
         }}
       >
         Theme Change
-      </button>
+      </ButtonLight>
     </header>
   )
 }

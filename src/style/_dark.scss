@@ -1,26 +1,32 @@
-html .dark {
-  background: grey;
-}
-
 .dark {
-  .container {
-    background: grey !important;
-    color: white;
+  .bg {
+    background-image: url(../images/BGCG_dark4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  nav a::after {
-    background: white;
+  .card {
+    color: white;
+    background: linear-gradient(
+      to right top,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(50px);
+    border: solid 1px transparent;
+    box-shadow: 0 8px 32px 0 rgba(46, 54, 68, 0.4);
+    border-radius: 2rem;
   }
+
+  /* nav a::after {
+    background: white;
+  } */
 
   a {
     color: white;
   }
 
   .subHeader {
-    color: rgb(212, 210, 210) !important;
+    color: rgb(207, 205, 205);
   }
-}
-
-html .light {
-  background: white;
 }

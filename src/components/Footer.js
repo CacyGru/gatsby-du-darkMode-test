@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer style={footerStyles.footer}>
       &copy; <Link to="/"> Drum Up</Link> {Year} |{" "}
-      <Link to="/Datenschutz">Datenschutz</Link> |{" "}
-      <Link to="/Impressum">Impressum</Link>
+      <Link to="/datenschutz">Datenschutz</Link> |{" "}
+      <Link to="/impressum">Impressum</Link>
     </footer>
   )
 }

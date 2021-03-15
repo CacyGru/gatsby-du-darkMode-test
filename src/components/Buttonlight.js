@@ -1,33 +1,23 @@
-import React from "react"
 import styled from "styled-components"
 
-const ButtonLight = ({ text, themeChange }) => {
-  return (
-    <Hover>
-      <Buttonlight onClick={themeChange}>{text}</Buttonlight>
-    </Hover>
-  )
-}
-
-const Buttonlight = styled.button`
+const ButtonLight = styled.button`
   display: inline-block;
   cursor: pointer;
-  background-color: #ebebeb;
+  background: #ebebeb;
   color: rgba(61, 176, 153, 1);
   outline: none;
   font-weight: bold;
   padding: 5px 10px;
-  box-shadow: 1px 1px 2px rgb(202, 202, 202);
+  box-shadow: 1px 1px 2px rgb(61, 176, 153);
   border: none;
-  border-radius: 10px;
+  border-radius: 9999px;
   transition: all 0.2s ease;
-`
 
-const Hover = styled.div`
-  &:hover ${Buttonlight} {
-    display: inline-block;
-    background-color: #d6d6d6;
-    color: red;
+  &:hover {
+    background: rgba(61, 176, 153, 1);
+    color: white;
+    box-shadow: 2px 2px 4px rgb(61, 176, 153);
+    text-shadow: 2px 2px 5px #2f8675;
   }
 `
 

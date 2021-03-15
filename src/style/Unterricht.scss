@@ -1,8 +1,18 @@
-.section1 {
+.unterricht_container {
   display: flex;
+  margin: 1rem 0;
 }
 
-.sidenav {
-  text-align: right;
-  margin-left: 4rem;
+.side-nav {
+  padding: 1rem;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+
+.content {
+  padding: 1rem;
 }

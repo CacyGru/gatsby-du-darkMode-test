@@ -5,8 +5,8 @@ import ButtonStyle from "../components/CTAButton.module.css"
 const CTAButton = ({ text, to }) => {
   return (
     <div>
-      <Link className={ButtonStyle.a} to={to}>
-        <button className={ButtonStyle.ctabutton}>{text}</button>
+      <Link className={ButtonStyle.ctabutton} to={to}>
+        {text}
       </Link>
     </div>
   )

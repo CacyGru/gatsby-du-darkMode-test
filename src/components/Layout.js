@@ -9,14 +9,16 @@ const Layout = props => {
   const state = useContext(GlobalStateContext)
   return (
     <div className={state.theme}>
-      <div className="container">
-        <div className="content">
-          <Header />
+      <div className="bg">
+        <div className="container card">
+          <div className="content">
+            <Header />
 
-          {props.children}
+            {props.children}
+          </div>
+          <TotopButton />
+          <Footer />
         </div>
-        <TotopButton />
-        <Footer />
       </div>
     </div>
   )

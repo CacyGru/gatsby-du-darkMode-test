@@ -3,6 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
 
   h1 {
     color: $primary-green;
@@ -17,16 +20,23 @@ header {
     margin: 0 5px;
   }
 
+  nav a {
+    &:focus {
+      outline: none;
+    }
+  }
+
   nav a::after {
     content: "";
     display: block;
     height: 3px;
     width: 0%;
-    background: $text;
+    background: $primary-green;
     transition: all ease-in-out 200ms;
   }
 
-  nav a:hover::after {
+  nav a:hover::after,
+  nav a:focus::after {
     width: 100%;
   }
 

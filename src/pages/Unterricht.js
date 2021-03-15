@@ -7,123 +7,21 @@ const Unterricht = () => {
     <Layout>
       <div>
         <h1>Unterricht</h1>
-        <section className="section1">
-          <div>
-            <h3>Inhalt</h3>
+        <div className="unterricht_container">
+          <div className="side-nav card">
+            <h3>Link1</h3>
+            <h3>Link2</h3>
+            <h3>Link3</h3>
+          </div>
+
+          <div className="content card">
+            <h3>Der Inhalt</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              sapiente ut, eius doloremque expedita repellendus fugiat officiis
-              qui id consequatur vitae! Totam officiis nemo architecto veritatis
-              voluptate numquam aliquid cupiditate iure aspernatur hic! Minima
-              cupiditate impedit corrupti magni et voluptates aspernatur, ipsum
-              nisi unde perferendis ratione? Ducimus sint quis pariatur!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              modi ipsam, magnam assumenda deserunt animi!
             </p>
           </div>
-        </section>
+        </div>
       </div>
     </Layout>
   )

@@ -10,7 +10,8 @@
   transition: all 0.2s ease;
 }
 
-.button2:hover {
+.button2:hover,
+.button2:focus {
   background-color: rgb(3, 24, 20);
   color: white;
 }
