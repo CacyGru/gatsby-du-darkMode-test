@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const TotopButton = () => {
-  return <Totopbutton className="card">^</Totopbutton>
+  return <Totopbutton>^</Totopbutton>
 }
 
 const Totopbutton = styled.button`
@@ -18,14 +18,14 @@ const Totopbutton = styled.button`
   color: white;
   font-weight: bold;
   font-size: 2rem;
-  /* background-color: rgba(61, 176, 153, 0.4); */
+  background-color: rgba( 61,176,153,0.3); 
 
   &:hover {
-    background-color: rgba(61, 176, 153, 0.5);
+    background-color: rgba( 61,176,153,1);
   }
 
   &:focus {
-    background-color: rgba(61, 176, 153, 0.8);
+    background-color: rgba( 61,176,153,0.6);
   }
 `
 

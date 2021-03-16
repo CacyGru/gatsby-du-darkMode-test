@@ -9,7 +9,7 @@ const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
 
   const activeStyles = {
-    color: "#db0202",
+    color: "#3db099",
   }
 
   return (
