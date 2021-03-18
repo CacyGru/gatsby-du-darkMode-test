@@ -4,6 +4,10 @@ import { Link } from "gatsby"
 import headerStyles from "./Header.module.scss"
 import { GlobalDispatchContext } from "../context/GlobalContextProvider"
 import ButtonLight from "./Buttonlight"
+import { VscColorMode } from "react-icons/vsc"
+import { BiHomeSmile } from "react-icons/bi"
+import { FaDrum } from "react-icons/fa"
+import { AiOutlineTeam, AiOutlineContacts } from "react-icons/ai"
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
@@ -21,26 +25,35 @@ const Header = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeStyles}>
-              Start
+              <BiHomeSmile /> Start
             </Link>
           </li>
           <li>
             <Link to="/unterricht" activeStyle={activeStyles}>
-              Unterricht
+              <FaDrum /> Unterricht
             </Link>
           </li>
           <li>
             <Link to="/teamtraining" activeStyle={activeStyles}>
-              Teamtraining
+              <AiOutlineTeam /> Teamtraining
             </Link>
           </li>
           <li>
             <Link to="/kontakt" activeStyle={activeStyles}>
-              Kontakt
+              <AiOutlineContacts /> Kontakt
             </Link>
           </li>
         </ul>
       </nav>
+
+      <VscColorMode
+        type="button"
+        size="2em"
+        /* color="#3DB099" */
+        onClick={() => {
+          dispatch({ type: "TOGGLE_THEME" })
+        }}
+      />
 
       <ButtonLight
         type="button"

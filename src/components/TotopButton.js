@@ -1,8 +1,13 @@
 import React from "react"
 import styled from "styled-components"
+import { VscChevronUp } from "react-icons/vsc"
 
 const TotopButton = () => {
-  return <Totopbutton>^</Totopbutton>
+  return (
+    <Totopbutton>
+      <VscChevronUp />
+    </Totopbutton>
+  )
 }
 
 const Totopbutton = styled.button`
@@ -18,14 +23,14 @@ const Totopbutton = styled.button`
   color: white;
   font-weight: bold;
   font-size: 2rem;
-  background-color: rgba( 61,176,153,0.3); 
+  background-color: rgba(61, 176, 153, 0.3);
 
   &:hover {
-    background-color: rgba( 61,176,153,1);
+    background-color: rgba(61, 176, 153, 1);
   }
 
   &:focus {
-    background-color: rgba( 61,176,153,0.6);
+    background-color: rgba(61, 176, 153, 0.6);
   }
 `
 

@@ -2,8 +2,8 @@ import React, { useContext } from "react"
 import Footer from "./Footer"
 import Header from "./Header"
 import "../style/styles.scss"
-import TotopButton from "./TotopButton"
 import { GlobalStateContext } from "../context/GlobalContextProvider"
+import ScrollButton from "./ScrollButton"
 
 const Layout = props => {
   const state = useContext(GlobalStateContext)
@@ -16,7 +16,8 @@ const Layout = props => {
 
             {props.children}
           </div>
-          <TotopButton />
+
+          <ScrollButton />
           <Footer />
         </div>
       </div>
