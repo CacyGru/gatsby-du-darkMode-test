@@ -16,7 +16,7 @@ const reducer = (state, action) => {
 }
 
 const initialState = {
-  theme: storage.getItem("theme") ? storage.getItem("theme") : "dark",
+  theme: storage.getItem("theme") ? storage.getItem("theme") : "light",
 }
 
 //Context

@@ -7,14 +7,15 @@ const Unterricht = () => {
     <Layout>
       <div>
         <h1>Unterricht</h1>
-        <div className="unterricht_container">
-          <div className="side-nav card">
+
+        <div className="card flex">
+          <div className="card-left">
             <h3>Link1</h3>
             <h3>Link2</h3>
             <h3>Link3</h3>
           </div>
 
-          <div className="content card">
+          <div className="content card-right">
             <h3>Der Inhalt</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi

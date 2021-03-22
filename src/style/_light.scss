@@ -1,8 +1,11 @@
+@use "./colors" as *;
+
 .light {
   .bg {
     background-image: url(../images/2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
 
   .card {
@@ -10,16 +13,19 @@
       to left top,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.1)
-     /*  rgba(61, 176, 153, 0.7),
+        /*  rgba(61, 176, 153, 0.7),
       rgba(61, 176, 153, 0.1) */
-      /*   rgba(105, 105, 105, 0.7),
+        /*   rgba(105, 105, 105, 0.7),
       rgba(105, 105, 105, 0.1) */
     );
     backdrop-filter: blur(40px);
-    border: solid 1px transparent;
     background-clip: padding-box;
-    box-shadow: 0 8px 32px 0 rgba(46, 54, 68, 0.4);
-    border-radius: 2rem;
+  }
+
+  .card-top,
+  .card-left {
+    color: $primary-green;
+    background: white;
   }
 
   .subHeader {

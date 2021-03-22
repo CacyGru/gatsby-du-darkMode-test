@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import headerStyles from "./Header.module.scss"
 import { GlobalDispatchContext } from "../context/GlobalContextProvider"
-import ButtonLight from "./Buttonlight"
+/* import ButtonLight from "./Buttonlight" */
 import { VscColorMode } from "react-icons/vsc"
 import { BiHomeSmile } from "react-icons/bi"
 import { FaDrum } from "react-icons/fa"
@@ -55,14 +55,14 @@ const Header = () => {
         }}
       />
 
-      <ButtonLight
+      {/* <ButtonLight
         type="button"
         onClick={() => {
           dispatch({ type: "TOGGLE_THEME" })
         }}
       >
         Theme Change
-      </ButtonLight>
+      </ButtonLight> */}
     </header>
   )
 }

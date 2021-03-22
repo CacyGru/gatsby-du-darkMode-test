@@ -34,6 +34,83 @@ body {
   margin-bottom: 2rem;
 }
 
+//card styling
+
+.card {
+  border: solid 1px transparent;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(46, 54, 68, 0.4);
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card-hover {
+  position: relative;
+}
+
+.card-hover:hover {
+  transform: translateY(-0.35em) scale(1.02);
+}
+
+.card-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0.5rem 1rem -0.25em rgba(46, 54, 68, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+.card-hover:hover::after {
+  opacity: 1;
+}
+
+//top white
+
+.card-top {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  h2 {
+    margin: 1rem;
+  }
+}
+
+//left white
+
+.flex {
+  display: flex;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 1rem;
+}
+
+.card-right {
+  flex: 4;
+  padding: 1rem;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
 li {
   list-style: none;
 }

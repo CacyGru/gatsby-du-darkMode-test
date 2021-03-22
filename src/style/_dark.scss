@@ -3,6 +3,7 @@
     background-image: url(../images/BGCG_dark4.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
 
   .card {
@@ -13,9 +14,16 @@
       rgba(255, 255, 255, 0.1)
     );
     backdrop-filter: blur(50px);
-    border: solid 1px transparent;
-    box-shadow: 0 8px 32px 0 rgba(46, 54, 68, 0.4);
-    border-radius: 2rem;
+    background-clip: padding-box;
+  }
+
+  .card-top,
+  .card-left {
+    background: rgb(173, 172, 172);
+  }
+
+  .card-right {
+    background: transparent;
   }
 
   /* nav a::after {
