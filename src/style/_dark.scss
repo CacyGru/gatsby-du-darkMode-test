@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 .dark {
   .bg {
     background-image: url(../images/BGCG_dark4.png);
@@ -6,7 +8,7 @@
     background-position: center center;
   }
 
-  .card {
+  .card{
     color: white;
     background: linear-gradient(
       to right top,
@@ -16,6 +18,13 @@
     backdrop-filter: blur(50px);
     background-clip: padding-box;
   }
+
+  .card__front, .card__back {
+    background: gray;
+    color:$primary-green;
+    
+    
+   }
 
   .card-top,
   .card-left {

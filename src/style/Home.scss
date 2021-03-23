@@ -34,11 +34,12 @@ blockquote {
 .cards {
   width: 100%;
   display: flex;
+  gap:2rem;
   align-items: flex-start;
   justify-content: space-between;
   margin: 6rem 0;
 }
 
 .home {
-  width: 45%;
+  width: 50%;
 }

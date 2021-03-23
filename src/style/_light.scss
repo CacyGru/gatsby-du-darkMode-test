@@ -22,6 +22,12 @@
     background-clip: padding-box;
   }
 
+  .card__front, .card__back {
+    background: white;
+    color:$primary-green;
+    
+   }
+
   .card-top,
   .card-left {
     color: $primary-green;
