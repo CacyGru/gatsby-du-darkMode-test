@@ -1,15 +1,8 @@
-@import "./colors";
-
-.subHeader {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.8rem;
-
-  font-weight: bold;
-}
+@use "./colors" as *;
 
 h1 {
   margin: 2rem 0;
+  line-height: 4rem;
 }
 
 .underline {
@@ -19,9 +12,9 @@ h1 {
     content: "";
     background: url(../images/underline.svg) no-repeat;
     width: 100%;
-    height: 53%;
+    height: 100%;
     position: absolute;
-    top: 30px;
+    top: 35px;
   }
 }
 
@@ -41,13 +34,11 @@ blockquote {
 .cards {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 
 .home {
   width: 45%;
-  display: flex;
-  flex-direction: column;
 }

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const ButtonLight = styled.button`
   display: inline-block;
+  width: 100%;
   cursor: pointer;
   background: #ebebeb;
   color: rgba(61, 176, 153, 1);

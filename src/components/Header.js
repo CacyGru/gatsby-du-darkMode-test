@@ -18,8 +18,8 @@ const Header = () => {
 
   return (
     <header className="card" style={headerStyles.header}>
-      <Link to="/">
-        <h1>Drum UP</h1>
+      <Link to="/" className="logo">
+        logo
       </Link>
       <nav>
         <ul>

@@ -37,8 +37,9 @@ body {
 //card styling
 
 .card {
-  border: solid 1px transparent;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(46, 54, 68, 0.4);
+  line-height: 1.6rem;
+  outline: solid 1px transparent;
+  box-shadow: 0 0.125rem 0.15rem 0 rgba(46, 54, 68, 0.4);
   border-radius: 2rem;
   transition: transform 0.3s ease;
 }
@@ -48,7 +49,7 @@ body {
 }
 
 .card-hover:hover {
-  transform: translateY(-0.35em) scale(1.02);
+  transform: translateY(-0.35em) scale(1.05);
 }
 
 .card-hover::after {
@@ -58,11 +59,12 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: 0 0.5rem 1rem -0.25em rgba(46, 54, 68, 0.4);
   opacity: 0;
+  box-shadow: 0 0.5rem 1rem -0.25em rgba(46, 54, 68, 0.4);
+  //box-shadow: 0 0.125rem 0.25rem 0 rgba(46, 54, 68, 0.4);
   transition: opacity 0.3s ease;
   border-radius: 2rem;
-  z-index: -1;
+  pointer-events: none;
 }
 
 .card-hover:hover::after {
@@ -73,8 +75,10 @@ body {
 
 .card-top {
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  display: flex;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border: solid 4px $primary-green;
 
   h2 {
     margin: 1rem;
@@ -91,9 +95,8 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
   padding: 1rem;
 }
 

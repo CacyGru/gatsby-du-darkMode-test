@@ -5,49 +5,58 @@ import Layout from "../components/Layout"
 import "../style/Home.scss"
 import Button2 from "../components/Button2"
 import ButtonLight from "../components/Buttonlight"
+import { FaDrum } from "react-icons/fa"
+import { AiOutlineTeam } from "react-icons/ai"
 
 const Home = () => {
   return (
     <Layout>
       <div className="content">
-        <div className="subHeader">Schlagzeugunterricht vom Profi</div>
         <h1>
-          <blockquote>
-            Ich bringe ihr Trommeln auf ein neues{" "}
-            <span className="underline">Level</span>
-          </blockquote>
+          Du kannst gar nicht trommeln? <br></br> Drum Up beweist dir das{" "}
+          <span className="underline">Gegenteil</span>
         </h1>
-        <CTAButton text="kostenlose Teststunde vereinbaren" to="/kontakt" />
+
         <div className="cards">
-          <div className="card card-hover home">
-            <div className="card-top">
-              <h2>Unterricht</h2>
+          <Link to="/unterricht" className="home">
+            <div className="card card-hover">
+              <div className="card-top">
+                <h2>
+                  <FaDrum /> Unterricht
+                </h2>
+              </div>
+              <div className="card-content">
+                <p>
+                  Ob Anfänger oder Profi, ich bringe dein Trommeln auf ein neues{" "}
+                  Level.
+                </p>
+                <Button2 to="/unterricht" text="Unterricht . . ."></Button2>
+              </div>
             </div>
-            <div className="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-                blanditiis obcaecati, nesciunt quasi totam modi dignissimos
-                voluptatem iusto unde quam.
-              </p>
-              <Button2 to="/unterricht" text="Unterricht"></Button2>
+          </Link>
+          <Link to="/teamtraining" className="home">
+            <div className="card card-hover">
+              <div className="card-top">
+                <h2>
+                  <AiOutlineTeam /> Teamtraining
+                </h2>
+              </div>
+              <div className="card-content">
+                <p>
+                  Drum UP Teamtraining nutzt Energie und gruppendynamische
+                  Prozesse einer (Trommel)Band, um mit Mitarbeitern, Kunden,
+                  Gästen, Kindern, Schülern oder Vereinsmitgliedern ein
+                  kraftvolles Erlebnis zu erschaffen.
+                </p>
+
+                <Link to="/teamtraining">
+                  <ButtonLight>Teamtraining . . .</ButtonLight>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="card card-hover home">
-            <div className="card-top">
-              <h2>Teamtraining</h2>
-            </div>
-            <div className="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-                blanditiis obcaecati, nesciunt quasi totam modi dignissimos
-                voluptatem iusto unde quam.
-              </p>
-              <ButtonLight>
-                <Link to="/teamtraining">Teamtraining</Link>
-              </ButtonLight>
-            </div>
-          </div>
+          </Link>
         </div>
+        <CTAButton text="kostenlose Teststunde vereinbaren" to="/kontakt" />
 
         <div className="card card-hover flex">
           <div className="card-left">
