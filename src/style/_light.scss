@@ -3,16 +3,13 @@
 .light {
   .bg {
     background-image: url(../images/2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 
   .card {
     background: linear-gradient(
       to left top,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.1)
+      rgba(222, 222, 222, 0.3),
+      rgba(222, 222, 222, 0.1)
         /*  rgba(61, 176, 153, 0.7),
       rgba(61, 176, 153, 0.1) */
         /*   rgba(105, 105, 105, 0.7),
@@ -22,15 +19,10 @@
     background-clip: padding-box;
   }
 
-  .card__front, .card__back {
-    background: white;
-    color:$primary-green;
-    
-   }
-
   .card-top,
-  .card-left {
+  .card-left,
+  .card__front, .card__back {
     color: $primary-green;
-    background: white;
+    background: rgba(222, 222, 222,1);
   }
 }

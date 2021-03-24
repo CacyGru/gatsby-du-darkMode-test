@@ -7,6 +7,7 @@ import Button2 from "../components/Button2"
 import ButtonLight from "../components/Buttonlight"
 import { FaDrum } from "react-icons/fa"
 import { AiOutlineTeam } from "react-icons/ai"
+import OnlineLesson from "../components/OnlineLesson"
 
 const Home = () => {
   return (
@@ -16,6 +17,8 @@ const Home = () => {
           Du kannst gar nicht trommeln? <br></br> Drum Up beweist dir das{" "}
           <span className="underline">Gegenteil</span>
         </h1>
+
+        <OnlineLesson />
 
         <div className="cards">
           <Link to="/unterricht" className="home">

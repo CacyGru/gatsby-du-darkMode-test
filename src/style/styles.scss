@@ -18,6 +18,10 @@ body {
   min-height: 100vh;
   padding: 2rem 0;
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .container {
@@ -79,7 +83,7 @@ body {
   display: flex;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  border: solid 4px $primary-green;
+  border: solid 2px $primary-green;
 
   h2 {
     margin: 1rem;

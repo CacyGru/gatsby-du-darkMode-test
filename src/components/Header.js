@@ -46,7 +46,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <VscColorMode
+      <VscColorMode className="dm-switch"
         type="button"
         size="2em"
         /* color="#3DB099" */
