@@ -8,6 +8,7 @@ import { VscColorMode } from "react-icons/vsc"
 import { BiHomeSmile } from "react-icons/bi"
 import { FaDrum } from "react-icons/fa"
 import { AiOutlineTeam, AiOutlineContacts } from "react-icons/ai"
+import Logo from "../images/DrumUP_Logo.svg"
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
@@ -18,8 +19,8 @@ const Header = () => {
 
   return (
     <header className="card" style={headerStyles.header}>
-      <Link to="/" className="logo">
-        logo
+      <Link to="/">
+        <img width="100px" src={Logo} alt="Logo" />
       </Link>
       <nav>
         <ul>
@@ -46,7 +47,8 @@ const Header = () => {
         </ul>
       </nav>
 
-      <VscColorMode className="dm-switch"
+      <VscColorMode
+        className="dm-switch"
         type="button"
         size="2em"
         /* color="#3DB099" */

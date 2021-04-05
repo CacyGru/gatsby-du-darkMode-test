@@ -5,23 +5,23 @@
     background-image: url(../images/BGCG_dark4.png);
   }
 
-  .card{
+  .card {
     color: $color-dark-text;
     background: linear-gradient(
       to right top,
-      rgba(31,42,46,0.4),
-      rgba(31,42,46,0.1)
+      rgba(31, 42, 46, 0.4),
+      rgba(31, 42, 46, 0.1)
     );
     backdrop-filter: blur(50px);
     background-clip: padding-box;
+    box-shadow: 0 0.125rem 0.15rem 0 rgba(222, 222, 222, 0.4);
   }
 
-  .card__front, .card__back {
+  .card__front,
+  .card__back {
     background: $color-dark-card;
-    color:$primary-green;
-    
-    
-   }
+    color: $primary-green;
+  }
 
   .card-top,
   .card-left {
@@ -32,11 +32,27 @@
     background: transparent;
   }
 
+  .card-hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 0 0.5rem 1rem -0.25em rgba(222, 222, 222, 0.4);
+    //box-shadow: 0 0.125rem 0.25rem 0 rgba(46, 54, 68, 0.4);
+    transition: opacity 0.3s ease;
+    border-radius: 2rem;
+    pointer-events: none;
+  }
+
   /* nav a::after {
     background: white;
   } */
 
-  a, .dm-switch {
+  a,
+  .dm-switch {
     color: $color-dark-link;
   }
 

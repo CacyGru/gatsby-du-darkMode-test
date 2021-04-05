@@ -17,12 +17,33 @@
     );
     backdrop-filter: blur(40px);
     background-clip: padding-box;
+    box-shadow: 0 0.125rem 0.15rem 0 rgba(46, 54, 68, 0.4);
+  }
+
+  .card-hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 0 0.5rem 1rem -0.25em rgba(46, 54, 68, 0.4);
+    //box-shadow: 0 0.125rem 0.25rem 0 rgba(46, 54, 68, 0.4);
+    transition: opacity 0.3s ease;
+    border-radius: 2rem;
+    pointer-events: none;
   }
 
   .card-top,
-  .card-left,
-  .card__front, .card__back {
+  .card-left {
     color: $primary-green;
-    background: rgba(222, 222, 222,1);
+    background: rgba(222, 222, 222, 0.3);
+  }
+
+  .card__front,
+  .card__back {
+    color: $primary-green;
+    background: rgba(222, 222, 222, 1);
   }
 }

@@ -2,8 +2,34 @@
 
 h1 {
   margin: 2rem 0;
-  line-height: 3rem;
-  text-transform: uppercase;
+  line-height: 4rem;
+  //text-transform: uppercase;
+  //color: $color-complement-0;
+
+  .h1Plus {
+    font-size: 2.5rem;
+    background-image: linear-gradient(
+      to right,
+      #cedbe9 0%,
+      #aac5de 17%,
+      #6199c7 50%,
+      #3a84c4 51%,
+      #419ad6 59%,
+      #26558b 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /*  background-image: -webkit-linear-gradient(
+      to right,
+      $color-complement-0,
+      rgb(156, 156, 156)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
 }
 
 .underline {
@@ -35,7 +61,7 @@ blockquote {
 .cards {
   width: 100%;
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   align-items: flex-start;
   justify-content: space-between;
   margin: 6rem 0;

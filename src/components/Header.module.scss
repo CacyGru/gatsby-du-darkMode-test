@@ -12,18 +12,6 @@ header {
     color: $primary-green;
   }
 
-  .logo {
-    &::before {
-      content: "";
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url(../images/DrumUP_Logo.svg);
-    }
-  }
-
   nav ul {
     display: flex;
   }
